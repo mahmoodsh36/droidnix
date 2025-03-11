@@ -9,6 +9,7 @@
     findutils utillinux gnugrep gnused gnutar xz
     unixtools.top unixtools.ping procps
     rsync
+    openssh
   ];
 
   home-manager = {
