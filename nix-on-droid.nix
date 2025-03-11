@@ -3,10 +3,10 @@
 {
   environment.packages = with pkgs; [
     man
-    neovim
+    neovim emacs
     git
-    emacs
     zsh
+    findutils utillinux gnugrep gnused gnutar xz
   ];
 
   home-manager = {
