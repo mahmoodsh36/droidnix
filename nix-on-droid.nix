@@ -7,7 +7,7 @@
     git
     zsh
     findutils utillinux gnugrep gnused gnutar xz
-    unixtools.top
+    unixtools.top unixtools.ping procps
     rsync
   ];
 
