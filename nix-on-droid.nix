@@ -26,6 +26,8 @@
     experimental-features = nix-command flakes
   '';
 
+  environment.sessionVariables.BRAIN_DIR = "/sdcard/brain";
+
   environment.etcBackupExtension = ".bak";
   time.timeZone = "Asia/Jerusalem";
   system.stateVersion = "24.05";
