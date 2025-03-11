@@ -7,6 +7,7 @@
     git
     zsh
     findutils utillinux gnugrep gnused gnutar xz
+    unixtools.top
   ];
 
   home-manager = {
