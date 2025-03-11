@@ -1,0 +1,3 @@
+gotta place this into ~/data/data/com.termux.nix/files/home/.config/nix-on-droid~
+
+then run ~nix-on-droid switch --flake .#default~
