@@ -8,6 +8,7 @@
     zsh
     findutils utillinux gnugrep gnused gnutar xz
     unixtools.top
+    rsync
   ];
 
   home-manager = {
