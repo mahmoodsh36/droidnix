@@ -16,6 +16,9 @@
     config =
       { config, lib, pkgs, ... }:
       {
+        programs.zsh.enable = true;
+        users.users.nix-on-droid.shell = pkgs.zsh;
+
         home.stateVersion = "24.05";
       };
   };
