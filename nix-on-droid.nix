@@ -12,6 +12,8 @@
     openssh
   ];
 
+  xdg-open.enable = true;
+
   home-manager = {
     backupFileExtension = "hm-bak";
     useGlobalPkgs = true;
