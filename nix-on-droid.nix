@@ -12,7 +12,7 @@
     openssh
   ];
 
-  xdg-open.enable = true;
+  android-integration.xdg-open.enable = true;
 
   home-manager = {
     backupFileExtension = "hm-bak";
