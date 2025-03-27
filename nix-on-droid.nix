@@ -2,14 +2,21 @@
 
 {
   environment.packages = with pkgs; [
-    man
+    # essentials
+    man git zsh findutils utillinux gnugrep gnused gnutar xz
+    unixtools.top unixtools.ping procps openssh
+
+    # tools i need
     neovim emacs
-    git
-    zsh
-    findutils utillinux gnugrep gnused gnutar xz
-    unixtools.top unixtools.ping procps
     rsync
-    openssh
+    (sbcl.withPackages (ps: with ps; [
+      serapeum lparallel alexandria
+      cl-ppcre str
+      cl-fad
+      py4cl
+      clingon # command-line options parser
+      ironclad # crypto functions
+    ]))
   ];
 
   android-integration.xdg-open.enable = true;
