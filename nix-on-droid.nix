@@ -9,14 +9,13 @@
     # tools i need
     neovim emacs
     rsync
-    (sbcl.withPackages (ps: with ps; [
-      serapeum lparallel alexandria
-      cl-ppcre str
-      cl-fad
-      py4cl
-      clingon # command-line options parser
-      ironclad # crypto functions
-    ]))
+    sbcl
+    # (sbcl.withPackages (ps: with ps; [
+    #   cl-ppcre str
+    #   cl-fad
+    #   clingon # command-line options parser
+    #   ironclad # crypto functions
+    # ]))
   ];
 
   # enable some fancy/useful stuff
