@@ -9,30 +9,17 @@
     # tools i need
     neovim emacs
     rsync
-    sbcl
-    # (sbcl.withPackages (ps: with ps; [
-    #   cl-ppcre str
-    #   cl-fad
-    #   clingon # command-line options parser
-    #   ironclad # crypto functions
-    # ]))
+    (sbcl.withPackages (ps: with ps; [
+      serapeum lparallel alexandria
+      cl-ppcre str
+      cl-fad
+      py4cl
+      clingon # command-line options parser
+      ironclad # crypto functions
+    ]))
   ];
 
-  # enable some fancy/useful stuff
   android-integration.xdg-open.enable = true;
-  android-integration.termux-setup-storage.enable = true;
-  # android-integration.termux-wake-lock.enable = true;
-  # android-integration.termux-wake-unlock.enable = true;
-  # android-integration.unsupported.enable = true;
-  # android-integration.termux-reload-settings.enable = true;
-  # android-integration.termux-open-url.enable = true;
-  # android-integration.termux-open.enable = true;
-  # android-integration.am.enable = true;
-
-  user = {
-    userName = "mahmooz";
-    shell = "${pkgs.zsh}/bin/zsh";
-  };
 
   home-manager = {
     backupFileExtension = "hm-bak";
