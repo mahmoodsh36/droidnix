@@ -9,17 +9,16 @@
     # tools i need
     neovim emacs
     rsync
-    sbcl
-    # (sbcl.withPackages (ps: with ps; [
-    #   cl-ppcre str
-    #   cl-fad
-    #   clingon # command-line options parser
-    #   ironclad # crypto functions
-    # ]))
+    (sbcl.withPackages (ps: with ps; [
+      cl-ppcre str
+      cl-fad
+      clingon # command-line options parser
+      ironclad # crypto functions
+    ]))
   ];
 
   # enable some fancy/useful stuff
-  android-integration.xdg-open.enable = true;
+  # android-integration.xdg-open.enable = true;
   # android-integration.termux-setup-storage.enable = true;
   # android-integration.termux-wake-lock.enable = true;
   # android-integration.termux-wake-unlock.enable = true;
